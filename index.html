@@ -22,14 +22,6 @@
   </head>
   <body>
     <nav id="navbar" class="nav">
-      <div class="logo">
-        <img
-          id="header-img"
-          src="./images/universidad-surcolombiana.svg"
-          alt="logo"
-        />
-      </div>
-
       <ul class="nav-links">
         <li>
           <a href="#welcome-section" class="nav-link nav-button">Sobre mi</a>
@@ -44,14 +36,36 @@
     </nav>
 
     <section id="welcome-section" class="welcome-section">
-      <h1>Alexis Lozano Guzmán</h1>
-      <p>
-        Estudiante de Ingeniería Electrónica de la universidad Surcolombiana
-      </p>
-      <p>
-        apasionado por el diseño de circuitos, programación de
-        microcontroladores y desarrollo de sistemas embebidos.
-      </p>
+      <div class="welcome-section-info">
+        <h1 class="name-text">Alexis Lozano Guzmán</h1>
+
+        <p class="long-info">
+          ¡Hola! Soy estudiante de <i>Ingeniería Electrónica de la Universidad Surcolombiana</i>. Durante
+          mi formación académica, he tenido la fortuna de colaborar con un
+          equipo de compañeros talentosos en proyectos de electrónica que han
+          resultado tanto desafiantes como fascinantes.
+        </p>
+        <p class="long-info">
+          En nuestros proyectos, nos enfocamos en el uso de amplificadores
+          operacionales aplicados a la vida cotidiana, en situaciones que muchas
+          veces pasan desapercibidas, pero que contribuyen a hacer nuestras
+          actividades diarias más prácticas y entretenidas. También hemos
+          diseñado y fabricado nuestros propios circuitos impresos (PCB) para
+          dar vida a estas ideas, lo que nos ha permitido aplicar los
+          conocimientos adquiridos en la carrera y explorar soluciones
+          tecnológicas innovadoras.
+        </p>
+        <p class="long-info">
+          Cada uno de estos proyectos ha sido cuidadosamente desarrollado y
+          sometido a pruebas en el laboratorio, asegurando su funcionalidad y
+          eficiencia. Este proceso me ha brindado una valiosa experiencia
+          práctica, ayudándome a comprender a fondo los retos y complejidades
+          asociados con el diseño e implementación de sistemas electrónicos.
+          Además, he aplicado la metodología de Design Thinking para estimular
+          la creatividad e innovación en los diseños, logrando que las
+          soluciones desarrolladas sean tanto efectivas como fáciles de usar.
+        </p>
+      </div>
     </section>
 
     <section id="projects" class="projects-section">
@@ -63,7 +77,7 @@
           <img class="project-image" src="" alt="project" />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Tribute Page
+            Placa de aprendizaje sobre el amplificador operacional
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -71,7 +85,7 @@
           <img class="project-image" src="" alt="project" />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Random Quote Machine
+            Diseño final de la placa de aprendizaje en PCB
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -79,7 +93,8 @@
           <img class="project-image" src="" alt="project" />
           <p class="project-title">
             <span class="code">&lt;</span>
-            JavaScript Calculator
+            Póster recopilatorio sobre el diseño de la placa de aprendizaje y la
+            metodología de diseño
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -87,7 +102,7 @@
           <img class="project-image" src="" alt="project" />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Map Data Across the Globe
+            Diseño e implementación de una sonda diferencial activa
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -95,7 +110,7 @@
           <img class="project-image" src="" alt="project" />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Wikipedia Viewer
+            Lluvia de aplicaciones del amplificador operacional
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -103,7 +118,7 @@
           <img class="project-image" src="" alt="project" />
           <p class="project-title">
             <span class="code">&lt;</span>
-            Tic Tac Toe Game
+            Póster didáctico sobre la lluvia de aplicaciones
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
@@ -121,38 +136,43 @@
         <p>¿Cómo tomas el café?</p>
       </div>
       <div class="contanct-links">
-        <a href="" target="_blank" class="btn cantact-details">
+        <a href="" target="_blank" class="btn contact-details">
           <i class="fab fa-facebook-square"></i> Facebook
         </a>
         <a
           id="profile-link"
           href=""
           target="_blank"
-          class="btn cantact-details"
+          class="btn contact-details"
         >
           <i class="fab fa-github"></i> Github
         </a>
-        <a href="" target="_blank" class="btn contant-details">
+        <a href="" target="_blank" class="btn contact-details">
           <i class="fab fa-twitter"></i> Twitter
         </a>
 
         <a
           href="/cdn-cgi/l/email-protection#aecbd6cfc3dec2cbeecbd6cfc3dec2cb80cdc1c3"
           target="_blank"
-          class="btn contant-details"
+          class="btn contact-details"
         >
           <i class="fas fa-at"></i> Enviame un correo</a
         >
 
-        <a href="tel:3133535079" class="btn contant-details">
+        <a href="tel:3133535079" class="btn contat-details">
           <i class="fas fa-mobile-alt"></i> Llamame
         </a>
       </div>
     </section>
+    <div class="back-to-top">
+      <a href="#welcome-section"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
     <footer>
       <p>Universidad Surcolombiana, Ingeniería Electronica.</p>
       <p>u2021115552@usco.edu.co</p>
       <p>©2024 Documentación de proyectos básicos de ingeniería.</p>
     </footer>
+    <script src="back-to-top.js"></script>
   </body>
 </html>
