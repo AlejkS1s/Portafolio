@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño final de la placa de aprendizaje en PCB</title>
+    <link rel="stylesheet" href="../projects-board-styles.css" />
+    <link rel="stylesheet" href="../project-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../fixes.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <ul class="nav-links">
+        <li>
+          <a href="../index.html" class="nav-link nav-button">Inicio</a>
+        </li>
+        <li>
+          <a href="../projects.html" class="nav-link nav-button">Proyectos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="project-title title">
+        Diseño final de la placa de aprendizaje en PCB
+      </h1>
+      <div class="project-container">
+        <p class="justify-paragraph">
+          Como se mencionó en el análisis previo, tras estudiar los circuitos de
+          voltaje de referencia y el filtro pasabanda, se dio inicio al
+          desarrollo de la placa final, cuyo objetivo principal es facilitar el
+          aprendizaje sobre los amplificadores operacionales de manera ágil y
+          sin complicaciones. La placa presentada es un circuito impreso (PCB)
+          diseñado específicamente para la implementación y el estudio de estos
+          dispositivos y sus aplicaciones. Integra componentes clave como el
+          amplificador operacional, resistencias ajustables (R1, R2, R3, R4, R5)
+          y condensadores (C1, C2, C3), lo que permite configurar diferentes
+          circuitos según las necesidades del usuario.
+        </p>
+        <p class="justify-paragraph">
+          De una lista de circuitos aplicativos que utilizan este dispositivo,
+          se permitió seleccionar únicamente dos o más para su estudio. Debido
+          al tiempo limitado para completar la tarea, el equipo optó por
+          analizar dos circuitos, los cuales incluyen todo lo necesario para
+          cumplir con los objetivos de aprendizaje. En esta etapa del proyecto,
+          se enfocarán en analizar los circuitos seleccionados y probar cada uno
+          de manera independiente.
+        </p>
+
+        <h3>Características de la Placa</h3>
+        <p class="justify-paragraph">
+          La placa incluye puntos de prueba (TP1, TP2, TP3, entre otros) que
+          facilitan la medición de voltajes y corrientes en tiempo real, además
+          de conectores de entrada y salida (VCC, VO, GND, VREF, V_I, V_O) que
+          permiten su integración con fuentes de alimentación y dispositivos
+          externos. Su diseño flexible permite la personalización de componentes
+          pasivos, ofreciendo versatilidad para diversas aplicaciones.<br />
+          Aunque se incorporaron resistencias ajustables, no se implementaron
+          capacitores variables, optando por el uso de capacitores de valor fijo
+          debido a las necesidades específicas del proyecto.
+        </p>
+
+        <img src="../images/p2/img_p2_1.png" />
+
+        <h3>Visualización 3D de la Placa</h3>
+        <img src="../images/p2/img_p2_2.png" />
+        <p class="justify-paragraph">
+          Puedes obtener el esquema completo del circuito en el siguiente
+          enlace:
+          <a
+            class="res-link"
+            href="https://github.com/CASTRO0907/PLACA"
+            target="_blank"
+            >PLACA</a
+          >
+        </p>
+        <h3>Participación del equipo</h3>
+        <p class="justify-paragraph">
+          El desarrollo de la placa fue un esfuerzo colaborativo del equipo,
+          donde se aportaron ideas clave como la inclusión de puntos de prueba
+          para facilitar las mediciones, elemento esencial al analizar el
+          comportamiento de un dispositivo. La posibilidad de variar
+          componentes, como las resistencias, también fue un aspecto central del
+          diseño, permitiendo mayor flexibilidad en los circuitos configurables.
+        </p>
+        <h3>Análisis y Documentación</h3>
+        <p class="justify-paragraph">
+          El análisis teórico y matemático detallado de los circuitos
+          implementados, como el regulador de voltaje y el filtro pasabanda, se
+          encuentra documentado en etapas anteriores del proyecto. Esto incluye
+          deducción de ecuaciones, cálculos de parámetros clave y explicaciones
+          detalladas sobre el funcionamiento de cada circuito, proporcionando un
+          marco sólido para el aprendizaje y desarrollo de proyectos prácticos.
+        </p>
+        <h3>Limitaciones y Observaciones</h3>
+        <p class="justify-paragraph">
+          Inicialmente, se planeó enviar la fabricación del PCB a JLCPCB, pero
+          al avanzar en el proyecto se identificó que el diseño no cumplía con
+          las normas IPC, estándares esenciales para garantizar la calidad y
+          funcionalidad de los circuitos impresos. Debido a esta falta de
+          conformidad, no fue posible construir las placas, lo que subraya la
+          importancia de considerar estas normativas desde el inicio del diseño.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Universidad Surcolombiana, Ingeniería Electronica.</p>
+      <p>u2021115552@usco.edu.co</p>
+      <p>©2024 Documentación de proyectos básicos de ingeniería.</p>
+    </footer>
+  </body>
+</html>

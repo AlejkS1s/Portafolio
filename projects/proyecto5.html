@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lluvia de aplicaciones del amplificador operacional</title>
+    <link rel="stylesheet" href="../projects-board-styles.css" />
+    <link rel="stylesheet" href="../project-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../fixes.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <ul class="nav-links">
+        <li>
+          <a href="../index.html" class="nav-link nav-button">Inicio</a>
+        </li>
+        <li>
+          <a href="../projects.html" class="nav-link nav-button">Proyectos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="project-title title">
+        Lluvia de aplicaciones del amplificador operacional
+      </h1>
+      <div class="project-container">
+        <p class="justify-paragraph">
+          Para este proyecto, se planteó hacer un análisis más intensivo de las
+          aplicaciones de un amplificador operacional, de ahí su nombre "lluvia
+          de aplicaciones", donde se requiere analizar y fabricar en PCB
+          universal cinco circuitos de aplicación usando amplificadores
+          operacionales. La cantidad de circuitos coincide con la cantidad de
+          integrantes del grupo de trabajo, cada uno de los cuales tuvo que
+          elegir una aplicación para desarrollar, analizar, implementar y medir
+          en el laboratorio.
+        </p>
+
+        <h2>Simuñador de inductancia</h2>
+        <p class="justify-paragraph">
+          Este circuito utiliza un amplificador operacional junto con
+          componentes pasivos como resistencias y capacitores para simular el
+          comportamiento de un inductor. Es una solución práctica cuando se
+          requieren inductores en espacios reducidos o en entornos donde los
+          inductores físicos podrían generar interferencia electromagnética. Se
+          utiliza principalmente en filtros activos y circuitos de resonancia, y
+          es adaptable a diferentes valores de inductancia al ajustar los
+          componentes.
+        </p>
+        <p class="justify-paragraph">
+          Este circuito fue previamente probado utilizando una breadboard para
+          comprobar su funcionamiento. Además, se realizó la simulación del
+          circuito con el fin de verificar el fenómeno inductivo que se esperaba
+          en la señal, específicamente el desfase en la salida.
+        </p>
+
+        <h3>Circuito simulador de inductancia en placa universal</h3>
+        <img src="../images/p5/img_p5_1.png" />
+
+        <h3>Simulacion:</h3>
+        <img src="../images/p5/img_p5_3.png" />
+
+        <h3>Mediciones:</h3>
+        <img src="../images/p5/img_p5_2.png" />
+
+        <h2>Generador de Señales Arbitrarias</h2>
+        <p class="justify-paragraph">
+          Diseñado para generar formas de onda ajustables, como sinusoidales,
+          triangulares o cuadradas, este circuito emplea osciladores basados en
+          amplificadores operacionales. Es ideal para laboratorios y pruebas de
+          sistemas electrónicos, ya que permite ajustar parámetros como amplitud
+          y frecuencia para simular diferentes condiciones operativas. Su
+          versatilidad lo convierte en una herramienta indispensable en el
+          desarrollo y validación de equipos electrónicos.
+        </p>
+        <p class="justify-paragraph">
+          Se requiere comprobar que a la salida genere una onda cuadrada, una
+          triangular y una cuadrática.
+        </p>
+
+        <h3>Circuito de generador de señales arbitrarias en placa universal</h3>
+        <img src="../images/p5/img_p5_4.png" />
+        <h3>Simulacion:</h3>
+        <img src="../images/p5/img_p5_7.png" />
+        <h3>Mediciones:</h3>
+        <img src="../images/p5/img_p5_6.png" />
+        <img src="../images/p5/img_p5_5.png" />
+
+        <h2>Convertidor Frecuencia-Voltaje (F/V)</h2>
+        <p class="justify-paragraph">
+          El circuito convierte una frecuencia de señal de entrada en un voltaje
+          proporcional a través de un diseño que incluye un detector de picos,
+          filtros activos y circuitos de promediado. Este convertidor es
+          importante en sistemas de medición y control industrial, como sensores
+          de velocidad y procesadores automáticos. Garantiza un desempeño
+          estable y lineal al adaptarse a variaciones de frecuencia, siendo una
+          solución confiable para aplicaciones dinámicas.
+        </p>
+        <p class="justify-paragraph">
+          Sin embargo, hubo varios problemas relacionados con este diseño.
+          Inicialmente, se empleaba un circuito con un transformador, pero
+          debido a un problema con la tierra física, este no funcionó. Como
+          resultado, se optó por cambiar el diseño, aunque las mediciones
+          realizadas no pudieron ser documentadas.
+        </p>
+
+        <h3>Circuito de convertidor F/V en placa universal</h3>
+        <img src="../images/p5/img_p5_8.png" />
+        <h3>Simulacion:</h3>
+        <img src="../images/p5/img_p5_9.png" />
+
+        <h2>Convertidor Digital a Analógico (DAC) 6 bits</h2>
+        <p class="justify-paragraph">
+          El circuito transforma datos digitales en señales analógicas continuas
+          utilizando una red resistiva R-2R y un amplificador operacional
+          sumador. Este diseño es crucial para la comunicación entre
+          microcontroladores y sistemas analógicos, y se aplica en controles de
+          motores, procesamiento de audio y generación de señales analógicas. Su
+          diseño permite escalabilidad y precisión, lo que lo hace adecuado para
+          sistemas embebidos y proyectos que requieren alta resolución.
+        </p>
+        <p class="justify-paragraph">
+          En el primer diseño se utilizó un DIP Switch, pero estos presentaron
+          fallas, por lo que se optó por rediseñarlo para usarlo con un Arduino.
+          La salida debería haber sido un cambio en niveles DC. Sin embargo,
+          debido a la falta de tiempo, no se logró realizar simulaciones ni
+          documentar mediciones. A pesar de ello, el circuito funcionó
+          correctamente en el laboratorio.
+        </p>
+
+        <h3>Circuito de convertidor DAC 6 bits en placa universal</h3>
+        <img src="../images/p5/img_p5_10.png" />
+        
+        <h2>Ecualizador de Señales</h2>
+        <p class="justify-paragraph">
+          Este circuito ajusta la amplitud de señales en rangos de frecuencia específicos mediante filtros activos diseñados con amplificadores operacionales. Es ampliamente utilizado en la ingeniería de audio para resaltar o atenuar frecuencias según las necesidades del usuario, y también se aplica en telecomunicaciones para filtrar ruidos o mejorar la claridad de las señales. Su configuración flexible permite personalizar el comportamiento del circuito según el entorno de uso.
+        </p>
+        <h3>Circuito de ecualizador de señales en placa universal</h3>
+        <img src="../images/p5/img_p5_11.png" />
+        <h3>Simulacion:</h3>
+        <img src="../images/p5/img_p5_13.png" />
+        <h3>Mediciones:</h3>
+        <img src="../images/p5/img_p5_12.png" />
+
+      </div>
+    </main>
+
+    <footer>
+      <p>Universidad Surcolombiana, Ingeniería Electronica.</p>
+      <p>u2021115552@usco.edu.co</p>
+      <p>©2024 Documentación de proyectos básicos de ingeniería.</p>
+    </footer>
+  </body>
+</html>
