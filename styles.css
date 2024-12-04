@@ -254,7 +254,7 @@ img {
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  padding-top: 2rem;
+  padding-top: 3rem;
   border-bottom: 0.2rem solid var(--main-white);
 }
 
